@@ -1,0 +1,101 @@
+{
+  "profile_id": 2,
+  "profile_name": "WhatsApp Full Configuration",
+  "created": "2026-04-21T22:07:00Z",
+  "description": "Complete WhatsApp security setup with MFA, whitelist, and group chat support",
+  
+  "whatsapp": {
+    "enabled": true,
+    "gateway_number": "+972547566041",
+    "authorized_contacts": [
+      {
+        "number": "+972504014068",
+        "name": "Liron (Wife / אשתי ההורסת)",
+        "access": "private_dm",
+        "mfa_required": true,
+        "verified": false
+      },
+      {
+        "number": "+972547566041",
+        "name": "Chen (Primary)",
+        "access": "full",
+        "mfa_required": false,
+        "verified": true,
+        "exempt_from_challenge": true
+      },
+      {
+        "number": "+972543073960",
+        "name": "Chen Mobile 2",
+        "access": "full",
+        "mfa_required": false,
+        "verified": true,
+        "exempt_from_challenge": true
+      },
+      {
+        "number": "+972542847847",
+        "name": "Niv Sheffer (ניב שפר)",
+        "access": "group_only",
+        "mfa_required": true,
+        "verified": false
+      },
+      {
+        "number": "+972547641488",
+        "name": "Matan Sheffer (מתן שפר)",
+        "access": "group_only",
+        "mfa_required": true,
+        "verified": false
+      }
+    ],
+    
+    "mfa": {
+      "enabled": true,
+      "scope": "whatsapp_only",
+      "challenge_question_he": "איזה במבה אני אוהב?",
+      "challenge_question_en": "Which Bamba do I love?",
+      "correct_answers": ["נוגט", "Nougat", "nougat", "NOUGAT"],
+      "failure_message": "לא עברת את בדיקת הזיהוי.\\nלכן לא אענה לך."
+    },
+    
+    "group_chat": {
+      "enabled": true,
+      "group_name": "שפר בקשי",
+      "triggers": ["bambabot", "במבה בוט", "bamba bot", "במבהבוט"],
+      "require_mfa_first_time": true
+    },
+    
+    "error_routing": {
+      "whatsapp_errors_forbidden": true,
+      "allowed_channels": ["console", "email", "telegram"],
+      "user_friendly_messages_only": true
+    },
+    
+    "blocked_contacts": [
+      "+972528340185",
+      "+972544566043"
+    ]
+  },
+  
+  "telegram": {
+    "enabled": true,
+    "bot_username": "@Bambaocbot",
+    "restrictions": "none"
+  },
+  
+  "google_workspace": {
+    "enabled": true,
+    "email": "chenshef@gmail.com",
+    "services": ["gmail", "calendar", "tasks"]
+  },
+  
+  "voice": {
+    "whisper_model": "small",
+    "languages": ["he", "en"],
+    "auto_transcribe": true
+  },
+  
+  "backup": {
+    "auto_backup": false,
+    "location": "~/.openclaw/workspace/backups/",
+    "schedule": "daily_02:00"
+  }
+}

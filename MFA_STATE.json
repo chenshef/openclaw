@@ -1,0 +1,30 @@
+{
+  "verified_contacts": {
+    "+972547566041": {
+      "name": "Chen (Primary)",
+      "verified": true,
+      "exempt_from_challenge": true,
+      "first_verified": "2026-04-21T18:53:00Z"
+    },
+    "+972543073960": {
+      "name": "Chen Mobile 2",
+      "verified": true,
+      "exempt_from_challenge": true,
+      "first_verified": "2026-04-21T21:12:00Z"
+    }
+  },
+  "secret_question": {
+    "question_he": "איזה במבה אני אוהב?",
+    "question_en": "Which Bamba do I love?",
+    "correct_answers": [
+      "נוגט",
+      "Nougat",
+      "nougat",
+      "NOUGAT"
+    ]
+  },
+  "challenge_enabled": true,
+  "challenge_scope": "whatsapp_only",
+  "failure_message": "לא עברת את בדיקת הזיהוי.\nלכן לא אענה לך.",
+  "failed_contacts": {}
+}

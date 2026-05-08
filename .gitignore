@@ -1,0 +1,35 @@
+# Python virtual environments
+whisper_env/
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Pentest binaries (large files)
+pentest-suite/ffuf
+pentest-suite/nuclei
+pentest-suite/subfinder
+pentest-suite/results_*/
+
+# Sensitive / personal
+*.env
+.env*
+
+# Temp / output
+youtube_chen_output/*.docx
+youtube_chen_output/*.vtt
+youtube_chen_output/*.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+obsidian-vault/

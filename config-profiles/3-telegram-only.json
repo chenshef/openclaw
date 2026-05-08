@@ -1,0 +1,47 @@
+{
+  "profile_id": 3,
+  "profile_name": "Telegram Only Configuration",
+  "created": "2026-04-21T22:07:00Z",
+  "description": "Telegram-only setup with no WhatsApp restrictions",
+  
+  "whatsapp": {
+    "enabled": false,
+    "gateway_number": null,
+    "authorized_contacts": [],
+    "mfa": {
+      "enabled": false
+    },
+    "group_chat": {
+      "enabled": false
+    },
+    "error_routing": {
+      "whatsapp_errors_forbidden": false
+    },
+    "blocked_contacts": []
+  },
+  
+  "telegram": {
+    "enabled": true,
+    "bot_username": "@Bambaocbot",
+    "restrictions": "none",
+    "authorized_users": ["556056149"]
+  },
+  
+  "google_workspace": {
+    "enabled": true,
+    "email": "chenshef@gmail.com",
+    "services": ["gmail", "calendar", "tasks"]
+  },
+  
+  "voice": {
+    "whisper_model": "small",
+    "languages": ["he", "en"],
+    "auto_transcribe": true
+  },
+  
+  "backup": {
+    "auto_backup": false,
+    "location": "~/.openclaw/workspace/backups/",
+    "schedule": "daily_02:00"
+  }
+}

@@ -1,0 +1,453 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-07T18:49:30.823Z",
+  "entries": {
+    "memory:memory/2026-04-20.md:28:84": {
+      "key": "memory:memory/2026-04-20.md:28:84",
+      "path": "memory/2026-04-20.md",
+      "startLine": 28,
+      "endLine": 84,
+      "source": "memory",
+      "snippet": "**Scans Performed:** 1. Basic scan: 70 seconds → 5 findings 2. OSCP scan: 11 minutes → 101 subdomains discovered (vs 8 basic), sensitive files found 3. Full scan: 1 minute → Infrastructure validated with nmap/nikto **Key Findings:** - 🟠 High (2): Missing SPF/DMARC, Sensitive files exposed (/.git, /.env, /admin, /backup) - 🟡 Medium (4): 101 subdomains, HTTP methods (PUT/DELETE), Missing security headers (5), No WAF **Reports Generated:** - comprehensive_security_report_yes.co.il.docx (14KB, 15-20 pages) - Multiple JSON/MD reports with full technical details ### Key Features Implemented **OSCP Methodology:** - DNS Zone Transfer (AXFR) attempts - 100+ subdomain bruteforce - Directory brut",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-22T14:18:46.369Z",
+      "lastRecalledAt": "2026-05-02T10:46:24.323Z",
+      "queryHashes": [
+        "28204707de23",
+        "24c0c6edf056",
+        "01c775c9bd91"
+      ],
+      "recallDays": [
+        "2026-04-22",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "backup",
+        "nmap/nikto",
+        "spf/dmarc",
+        "put/delete",
+        "15-20",
+        "json/md",
+        "scans",
+        "performed"
+      ]
+    },
+    "memory:memory/2026-04-20.md:1:34": {
+      "key": "memory:memory/2026-04-20.md:1:34",
+      "path": "memory/2026-04-20.md",
+      "startLine": 1,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "# 2026-04-20 Memory Log ## Major Project: Pentest Suite - Professional Penetration Testing Platform ### Overview Built a complete, enterprise-grade penetration testing platform from scratch in ~3.5 hours. Full OSCP-level security assessment suite with professional Word report generation. ### What Was Built **Core Scanners (3):** 1. `pentest_engine.py` (19KB) - Basic scan (1-2 min): DNS, SSL, headers, OWASP 2. `oscp_advanced_scan.py` (28KB) - OSCP-level (10-15 min): 100+ subdomains, directory bruteforce, sensitive file discovery 3. `oscp_full_no_skip.py` (11KB) - Full suite (20-30 min): All tools, no-skip policy, asks before skipping **Report Generators (3):** - `report_generator.py` (62",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-22T14:18:46.369Z",
+      "lastRecalledAt": "2026-05-02T10:46:24.323Z",
+      "queryHashes": [
+        "28204707de23",
+        "24c0c6edf056",
+        "01c775c9bd91"
+      ],
+      "recallDays": [
+        "2026-04-22",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "enterprise-grade",
+        "3.5",
+        "oscp-level",
+        "pentest-engine.py",
+        "1-2",
+        "oscp-advanced-scan.py",
+        "10-15",
+        "oscp-full-no-skip.py"
+      ]
+    },
+    "memory:memory/2026-04-21.md:1:53": {
+      "key": "memory:memory/2026-04-21.md:1:53",
+      "path": "memory/2026-04-21.md",
+      "startLine": 1,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "# 2026-04-21 - Daily Memory ## 🔐 WhatsApp Security & MFA Configuration ### Authorized Contacts (WhatsApp only) **4 authorized numbers:** 1. +972504014068 (Liron - Wife / לירון אשתי) 2. +972547566041 (Chen) 3. +972542847847 (Niv Sheffer / ניב שפר) 4. +972547641488 (Matan Sheffer / מתן שפר) ### MFA Challenge System **Secret question:** \"איזה במבה אני אוהב?\" (Which Bamba do I love?) **Correct answer:** \"נוגט\" (Nougat) - case insensitive **Rules:** - Chen (+972547566041) is exempt from challenge - Liron, Niv, Matan must pass challenge on first contact (DM or group mention) - If correct answer: full access granted permanently - If wrong answer: send failure message ONCE, then HEARTBEAT_OK fo",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-22T14:18:46.369Z",
+      "lastRecalledAt": "2026-04-22T14:18:46.369Z",
+      "queryHashes": [
+        "28204707de23"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "whatsapp",
+        "security",
+        "mfa",
+        "configuration",
+        "authorized",
+        "contacts",
+        "only"
+      ]
+    },
+    "memory:memory/2026-04-19.md:81:123": {
+      "key": "memory:memory/2026-04-19.md:81:123",
+      "path": "memory/2026-04-19.md",
+      "startLine": 81,
+      "endLine": 123,
+      "source": "memory",
+      "snippet": "5. **create_enhanced_doc.py** - Enhanced Word document generator 6. **create_21_usecases.py** - 21 use cases document generator #### Cron Job: ```cron 30 20 * * * cd /home/openclaw/.openclaw/workspace && python3 send_daily_watchlist.py | /usr/local/bin/openclaw send --channel telegram --to 556056149 ``` #### Features: - 💾 **Watch Later Mode:** Quick save to JSONL database - 📄 **Full Analysis Mode:** Generate comprehensive technical document - 📅 **Daily Digest:** Telegram notification at 20:30 with table of saved videos #### User Flow: 1. User sends YouTube link 2. Agent asks: \"לשמור לצפייה מאוחר או להכין מסמך מעמיק?\" 3. User chooses mode 4. Agent processes accordingly #### Videos Proc",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-22T14:18:46.369Z",
+      "lastRecalledAt": "2026-05-02T10:48:41.899Z",
+      "queryHashes": [
+        "28204707de23",
+        "b1aeaafd41c7"
+      ],
+      "recallDays": [
+        "2026-04-22",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "create-enhanced-doc.py",
+        "create-21-usecases.py",
+        "home/openclaw",
+        "openclaw/workspace",
+        "send-daily-watchlist.py",
+        "usr/local/bin/openclaw",
+        "enhanced",
+        "word"
+      ]
+    },
+    "memory:memory/2026-04-20.md:75:124": {
+      "key": "memory:memory/2026-04-20.md:75:124",
+      "path": "memory/2026-04-20.md",
+      "startLine": 75,
+      "endLine": 124,
+      "source": "memory",
+      "snippet": "├── 5 documentation files ├── 7 professional tools installed └── venv with Python packages (dnspython, python-whois, requests, beautifulsoup4) ``` **File Locations:** - Project root: `~/.openclaw/workspace/pentest-suite/` - Reports: `results_www.yes.co.il_*/` - Main doc: `COMPLETE_PROJECT_DOCUMENTATION.md` (1,127 lines) ### User Requirements Met ✅ All scanning tools installed (not skipped) ✅ No silent skipping - always asks user permission ✅ Word format reports (.docx) based on provided template ✅ OSCP best practices from offensive security methodology ✅ Full compliance framework alignment ### Usage ```bash cd ~/.openclaw/workspace/pentest-suite source venv/bin/activate # Quick (1-2 mi",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-02T08:24:48.742Z",
+      "lastRecalledAt": "2026-05-02T10:46:24.323Z",
+      "queryHashes": [
+        "24c0c6edf056",
+        "01c775c9bd91"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "python-whois",
+        "openclaw/workspace/pentest-suite",
+        "results-www.yes.co.il",
+        "venv/bin/activate",
+        "1-2",
+        "documentation",
+        "professional",
+        "tools"
+      ]
+    },
+    "memory:memory/2026-04-20.md:121:142": {
+      "key": "memory:memory/2026-04-20.md:121:142",
+      "path": "memory/2026-04-20.md",
+      "startLine": 121,
+      "endLine": 142,
+      "source": "memory",
+      "snippet": "1. **OSCP enumeration works**: Found 93 additional subdomains and critical .git exposure 2. **CloudFront protects well**: Zone transfer blocked, good firewall (98 ports filtered) 3. **No-skip policy valuable**: User always in control, no silent failures 4. **Word reports critical**: Executive stakeholders need .docx format 5. **Multi-level approach effective**: Basic (quick), OSCP (thorough), Full (complete) ### Future Enhancements Discussed - Web UI dashboard - Multi-target scanning - CI/CD integration (GitLab/GitHub) - Scheduled scans (cron) - Database backend - Slack/Teams notifications - Plugin system --- **Status:** ✅ Complete and production-ready **Location:** `~/.openclaw/workspac",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-02T08:24:48.742Z",
+      "lastRecalledAt": "2026-05-02T10:46:24.323Z",
+      "queryHashes": [
+        "24c0c6edf056",
+        "01c775c9bd91"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "no-skip",
+        "multi-level",
+        "multi-target",
+        "ci/cd",
+        "gitlab/github",
+        "slack/teams",
+        "production-ready",
+        "openclaw/workspac"
+      ]
+    },
+    "memory:memory/2026-04-21.md:92:138": {
+      "key": "memory:memory/2026-04-21.md:92:138",
+      "path": "memory/2026-04-21.md",
+      "startLine": 92,
+      "endLine": 138,
+      "source": "memory",
+      "snippet": "- Daily summary at 20:30 (Israel time) --- ## 🎯 Key Decisions 1. **WhatsApp security hardened** - strict whitelist + MFA 2. **Whisper upgraded** - Small model for better Hebrew 3. **Voice integration working** - calendar, tasks, queries 4. **Telegram remains open** - no restrictions (for now) --- ## 📝 Files Modified/Created - `AUTHORIZED_CONTACTS.md` - WhatsApp whitelist - `MFA_STATE.json` - Challenge state tracking - `transcribe_voice.py` - Updated to Small model - `youtube_chen_tools.py` - YouTube utilities - `pentest-suite/` - Professional security scanning --- ## 🚨 Blocked Interactions (Silent Mode Active) - אליהו שפר: Multiple messages ignored (6+) - שולה: Multiple messages",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-02T08:24:48.742Z",
+      "lastRecalledAt": "2026-05-02T08:24:48.742Z",
+      "queryHashes": [
+        "24c0c6edf056"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "modified/created",
+        "authorized-contacts.md",
+        "mfa-state.json",
+        "transcribe-voice.py",
+        "youtube-chen-tools.py",
+        "pentest-suite",
+        "summary",
+        "israel"
+      ]
+    },
+    "memory:memory/2026-04-21.md:46:106": {
+      "key": "memory:memory/2026-04-21.md:46:106",
+      "path": "memory/2026-04-21.md",
+      "startLine": 46,
+      "endLine": 106,
+      "source": "memory",
+      "snippet": "### Upgrade Completed - **Model:** Whisper Small (244MB) - upgraded from Base - **Languages:** Hebrew + English auto-detection - **Performance:** Significantly improved Hebrew transcription - **Location:** `~/.openclaw/workspace/whisper_env/` - **Scripts:** `transcribe_voice.py`, `run_whisper.sh` ### Voice-to-Action Examples - Created calendar event from voice: \"פגישה בפארק מחר בשעה עשר\" - Created shopping list from voice - Created work tasks in English - Listed tasks via voice command --- ## 📋 Tasks & Calendar ### Created Events - **Meeting in park:** Tomorrow (22 April) 10:00-11:00 ### Created Tasks (22 April deadline) 1. 🛒 Shopping list: חלב, לחם, גבינה, סוכר, ביצים 2. 📧 Sending e",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-02T08:24:48.742Z",
+      "lastRecalledAt": "2026-05-02T08:24:48.742Z",
+      "queryHashes": [
+        "24c0c6edf056"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "auto-detection",
+        "openclaw/workspace/whisper-env",
+        "transcribe-voice.py",
+        "run-whisper.sh",
+        "voice-to-action",
+        "00-11",
+        "upgrade",
+        "completed"
+      ]
+    },
+    "memory:memory/2026-04-19.md:39:89": {
+      "key": "memory:memory/2026-04-19.md:39:89",
+      "path": "memory/2026-04-19.md",
+      "startLine": 39,
+      "endLine": 89,
+      "source": "memory",
+      "snippet": "- ✅ Created tasks in Home-TASKS and WORK tasks → SUCCESS - ✅ Updated task due dates → SUCCESS ### Credentials Location: ``` ~/.google_workspace_mcp/credentials/ ├── chenshef@gmail.com.json └── chen@chensheffer.com.json ``` ### Google Cloud Project: - Project: openclaw-assistant-493805 - OAuth Client ID: 777561096396-cktjl5v3j85ha2p1gghcj27dj2dp0hf3 - Authorized redirect URIs: - http://localhost:8000/oauth2callback - https://09a4a86c6d5fa7.lhr.life/oauth2callback (localhost.run tunnel - temporary) - urn:ietf:wg:oauth:2.0:oob (out-of-band for manual code entry) - Test users: chenshef@gmail.com added - Publishing status: Testing --- ## YouTube Chen Project - ✅ Phase 1 Complete ### Go",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-02T10:48:41.899Z",
+      "lastRecalledAt": "2026-05-07T18:42:49.919Z",
+      "queryHashes": [
+        "b1aeaafd41c7",
+        "84d7355ce7f2"
+      ],
+      "recallDays": [
+        "2026-05-02",
+        "2026-05-07"
+      ],
+      "conceptTags": [
+        "home-tasks",
+        "google-workspace-mcp/credentials",
+        "gmail.com.json",
+        "chensheffer.com.json",
+        "openclaw-assistant-493805",
+        "8000/oauth2callback",
+        "localhost.run",
+        "2.0"
+      ]
+    },
+    "memory:memory/2026-04-19.md:188:202": {
+      "key": "memory:memory/2026-04-19.md:188:202",
+      "path": "memory/2026-04-19.md",
+      "startLine": 188,
+      "endLine": 202,
+      "source": "memory",
+      "snippet": "- Chen Mobile 2 (+972543073960) - לירון (+972504014068) - MMoreno (+972544525501) --- ## Action Items for Tomorrow: 1. Complete final version of \"21 Use Cases\" document with: - All 21 prompts word-for-word - Infographics and diagrams - Professional formatting per specifications - Deliver to user via Telegram 2. Monitor shopping list and work tasks completion 3. Send daily YouTube watchlist at 20:30 if any videos saved",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-02T10:48:41.899Z",
+      "lastRecalledAt": "2026-05-02T10:48:41.899Z",
+      "queryHashes": [
+        "b1aeaafd41c7"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "word-for-word",
+        "chen",
+        "mobile",
+        "לירון",
+        "mmoreno",
+        "action",
+        "items",
+        "tomorrow"
+      ]
+    },
+    "memory:memory/2026-04-22.md:1:52": {
+      "key": "memory:memory/2026-04-22.md:1:52",
+      "path": "memory/2026-04-22.md",
+      "startLine": 1,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "# 2026-04-22 (Wednesday) ## Morning ### 08:40 - Document Delivery Standard Chen clarified the delivery standard for technical documents: - **Markdown (MD)** - for quick reading in chat - **Word (DOCX)** - professionally formatted with Arial 12 (body) / Arial 14 (headings) - **Links** - direct access to files Updated TOOLS.md with this standard. ### 08:42 - OpenClaw Complete Technical Guide Chen requested: `OPENCLAW_COMPLETE_TECHNICAL_GUIDE` Spawned subagent to create comprehensive 50+ page technical guide covering: 1. Introduction & Overview 2. Installation & Setup 3. Gateway Architecture 4. Channels (WhatsApp, Telegram, Discord, etc.) 5. Agent Runtime 6. Automation 7. Tools & Skills 8.",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-07T18:42:49.919Z",
+      "lastRecalledAt": "2026-05-07T18:49:30.823Z",
+      "queryHashes": [
+        "84d7355ce7f2",
+        "13d56fedac66"
+      ],
+      "recallDays": [
+        "2026-05-07"
+      ],
+      "conceptTags": [
+        "gateway",
+        "tools.md",
+        "wednesday",
+        "morning",
+        "document",
+        "delivery",
+        "standard",
+        "chen"
+      ]
+    },
+    "memory:memory/2026-05-07.md:1:12": {
+      "key": "memory:memory/2026-05-07.md:1:12",
+      "path": "memory/2026-05-07.md",
+      "startLine": 1,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "## רעיון לפרויקט — API Cost Calculator **שם:** Build Plan for API Calc **תאריך:** 2026-05-07 **תיאור:** בניית כלי לחישוב עלויות API calls **סטטוס:** רעיון — לא פותח עדיין **פרטים נוספים:** לברר בשיחה הבאה מה בדיוק הדרישות ## נוטה חופשית — בדיקה 223 **תאריך:** 2026-05-07",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-07T18:49:30.823Z",
+      "lastRecalledAt": "2026-05-07T18:49:30.823Z",
+      "queryHashes": [
+        "13d56fedac66"
+      ],
+      "recallDays": [
+        "2026-05-07"
+      ],
+      "conceptTags": [
+        "רעיון",
+        "לפרויקט",
+        "api",
+        "cost",
+        "calculator",
+        "plan",
+        "calc",
+        "תאריך"
+      ]
+    },
+    "memory:memory/2026-05-02.md:22:48": {
+      "key": "memory:memory/2026-05-02.md:22:48",
+      "path": "memory/2026-05-02.md",
+      "startLine": 22,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "- **Pre-scan estimate:** Always show time, cost, tools, methodology before running - Uses existing pentest-suite scripts: `pentest_engine.py`, `oscp_advanced_scan.py`, `oscp_full_no_skip.py` - Tool paths: ffuf, nuclei, subfinder in `~/pentest-suite/`, system: nmap, sqlmap, gobuster, nikto, whatweb ## Pentest Work Done Today ### oshertime.smart-click.co.il - Scanned at 08:03 - Findings: DirectAdmin port 2222 (HIGH), FTP port 21 (HIGH), WordPress XML-RPC (MEDIUM), Clickjacking (LOW) - False positives removed: jQuery 1.8.7 (was CSS plugin filename, not jQuery), DNS Zone Transfer (protected) - POC document created with exploit commands for each finding - Validated report created - All docs uplo",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-07T18:49:30.823Z",
+      "lastRecalledAt": "2026-05-07T18:49:30.823Z",
+      "queryHashes": [
+        "13d56fedac66"
+      ],
+      "recallDays": [
+        "2026-05-07"
+      ],
+      "conceptTags": [
+        "pre-scan",
+        "pentest-suite",
+        "pentest-engine.py",
+        "oscp-advanced-scan.py",
+        "oscp-full-no-skip.py",
+        "oshertime.smart-click.co.il",
+        "xml-rpc",
+        "1.8.7"
+      ]
+    },
+    "memory:memory/2026-05-02.md:43:72": {
+      "key": "memory:memory/2026-05-02.md:43:72",
+      "path": "memory/2026-05-02.md",
+      "startLine": 43,
+      "endLine": 72,
+      "source": "memory",
+      "snippet": "- 79 subdomains found, CloudFront + AWS WAF detected - Report uploaded: `1_OnBOVhxCnBLRdxtd9isKMcuJqiukjqYlJFwN5MbGyY` - Note: First scan job at 12:22 failed silently, re-ran at 13:40 ## YouTube Analysis Done Today - Hermes Agent vs OpenClaw (TdNchYT0OSY) → full analysis → Drive: `1GNm9biaw9hlHTJ7Q_n1ukJqczavgbjTb74KqIsUL1iE` - DJI Neo 2 Review (ue05XMKIkps) → full analysis + watch later → Drive: `1sL2lfAMoS8M3asjq-VCFwfL2tYtQKdgMdYSOX1DQDc0` ## Lessons Learned - Long exec jobs in main session freeze Telegram — always use isolated cron/subagent for pentest scans - Subagents can return \"completed\" without actually producing output — verify files exist before reporting success - nuclei/subfi",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-07T18:49:30.823Z",
+      "lastRecalledAt": "2026-05-07T18:49:30.823Z",
+      "queryHashes": [
+        "13d56fedac66"
+      ],
+      "recallDays": [
+        "2026-05-07"
+      ],
+      "conceptTags": [
+        "re-ran",
+        "cron/subagent",
+        "nuclei/subfi",
+        "subdomains",
+        "found",
+        "cloudfront",
+        "aws",
+        "waf"
+      ]
+    }
+  }
+}

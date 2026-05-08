@@ -1,0 +1,75 @@
+{
+  "profile_id": 1,
+  "profile_name": "WhatsApp - Chen Only",
+  "created": "2026-04-21T22:12:00Z",
+  "description": "WhatsApp with ONLY Chen's numbers. Complete lockdown - no one else can contact.",
+  
+  "whatsapp": {
+    "enabled": true,
+    "gateway_number": "+972547566041",
+    "mode": "chen_only",
+    
+    "authorized_contacts": [
+      {
+        "number": "+972547566041",
+        "name": "Chen (Primary)",
+        "access": "full",
+        "mfa_required": false,
+        "verified": true,
+        "exempt_from_challenge": true
+      },
+      {
+        "number": "+972543073960",
+        "name": "Chen Mobile 2",
+        "access": "full",
+        "mfa_required": false,
+        "verified": true,
+        "exempt_from_challenge": true
+      }
+    ],
+    
+    "mfa": {
+      "enabled": false
+    },
+    
+    "group_chat": {
+      "enabled": false,
+      "note": "Chen can still interact in groups, but bot won't respond to others"
+    },
+    
+    "error_routing": {
+      "whatsapp_errors_forbidden": true,
+      "allowed_channels": ["console", "email", "telegram"],
+      "user_friendly_messages_only": true
+    },
+    
+    "response_policy": {
+      "chen_numbers": "full_response",
+      "all_others": "HEARTBEAT_OK",
+      "block_voice_messages": true,
+      "block_video_messages": true,
+      "block_text_messages": true,
+      "exceptions": "none"
+    },
+    
+    "blocked_all_except_chen": true
+  },
+  
+  "telegram": {
+    "enabled": true,
+    "bot_username": "@Bambaocbot",
+    "restrictions": "none"
+  },
+  
+  "google_workspace": {
+    "enabled": true,
+    "email": "chenshef@gmail.com",
+    "services": ["gmail", "calendar", "tasks"]
+  },
+  
+  "voice": {
+    "whisper_model": "small",
+    "languages": ["he", "en"],
+    "auto_transcribe": true
+  }
+}
